@@ -12,14 +12,14 @@ type Product = {
     imageUrl: string;
 }
 
-var emptyProducts: Product[] = [];
+const emptyProducts: Product[] = [];
 
 function Products() {
     const [products, setProducts]: [Product[], (products: Product[]) => void]
         = useState(emptyProducts);
 
     useEffect(() => {
-        axios.get<Product[]>("https://localhost:7250/catalog",
+        axios.get<Product[]>("https://localhost:7152/catalog",
         {
             headers: {
                 "Content-Type": "application/json",
