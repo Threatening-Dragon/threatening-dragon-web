@@ -22,7 +22,7 @@ function App() {
     <div className="grid-container">
             <link rel="stylesheet" href="style.css" />
             <title>Threatening Dragon</title>
-        <body>
+        
         <header className="header">
             <div className="brand">
                 <button onClick={openMenu}>&#9776;</button>
@@ -62,7 +62,7 @@ function App() {
         <footer>
             &copy; 2022 Threatening Dragon
         </footer>
-        </body>
+        
     </div>
     </Router>
   );
