@@ -1,5 +1,3 @@
-import React from 'react';
-
 function CheckoutSteps(props: any) {
     return <div className="checkout-steps">
             <div className={props.step1 ? 'active' : ''} >Signin</div>

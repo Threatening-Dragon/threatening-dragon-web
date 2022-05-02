@@ -19,7 +19,7 @@ function Products() {
         = useState(emptyProducts);
 
     useEffect(() => {
-        axios.get<Product[]>("https://localhost:7152/catalog",
+        axios.get<Product[]>("https://threatening-dragon-api.azurewebsites.net/catalog",
         {
             headers: {
                 "Content-Type": "application/json",
